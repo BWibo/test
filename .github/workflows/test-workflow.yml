@@ -1,0 +1,14 @@
+name: psql-docker-build-release
+
+on:
+  release:
+    types: [released, edited]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: echo step
+      run: echo "this is running"
