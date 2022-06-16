@@ -6,8 +6,10 @@ on:
 
 jobs:
   test:
-
+    if: "!github.events.release.prerelease"
     runs-on: ubuntu-latest
+
+
 
     steps:
     - name: echo step
