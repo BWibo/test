@@ -2,11 +2,11 @@ name: psql-docker-build-release
 
 on:
   release:
-    types: [released, edited]
+    types: [published, edited]
 
 jobs:
   test:
-    if: "!github.event.release.prerelease"
+    if: ! github.event.release.prerelease
 
     runs-on: ubuntu-latest
 
