@@ -12,4 +12,11 @@ jobs:
 
     steps:
     - name: echo step
-      run: echo "this is running"
+      run: echo "test is running running"
+
+  otherJob:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: echo step
+      run: echo "other ob is running!"
